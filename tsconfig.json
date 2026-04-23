@@ -11,9 +11,10 @@
   "compilerOptions": {
     "paths": {
       "~*": [
-        "./*"
+        "./src/*"
       ]
     },
-    "baseUrl": "."
+    "baseUrl": ".",
+    "types": ["chrome"]
   }
 }

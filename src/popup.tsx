@@ -19,6 +19,12 @@ function IndexPopup() {
       <a href="https://docs.plasmo.com" target="_blank">
         View Docs
       </a>
+      <button
+        onClick={() =>
+          chrome.tabs.create({ url: "./tabs/tracked-jobs-list.html" })
+        }>
+        Open Tab
+      </button>
     </div>
   )
 }
