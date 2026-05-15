@@ -4,4 +4,10 @@ import { defineConfig } from 'wxt';
 export default defineConfig({
   srcDir: 'src',
   modules: ['@wxt-dev/module-svelte'],
+  webExt: {
+    binaries: {
+      chrome: 'C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe'
+    }
+  },
+  targetBrowsers: ['chrome']
 });
