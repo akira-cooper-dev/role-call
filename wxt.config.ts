@@ -6,8 +6,9 @@ export default defineConfig({
   modules: ['@wxt-dev/module-svelte'],
   webExt: {
     binaries: {
-      chrome: 'C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe'
+      chrome: 'C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe',
+      edge: 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe'
     }
   },
-  targetBrowsers: ['chrome']
+  targetBrowsers: ['chrome', 'edge']
 });
