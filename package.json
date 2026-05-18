@@ -15,9 +15,12 @@
     "postinstall": "wxt prepare"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.11",
+    "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.2.2",
     "@tsconfig/svelte": "^5.0.8",
     "@wxt-dev/module-svelte": "^2.0.4",
+    "daisyui": "^5.5.19",
     "svelte": "^5.53.7",
     "svelte-check": "^4.4.4",
     "tailwindcss": "^4.2.2",
