@@ -1,26 +1,27 @@
 <script lang="ts">
+  import './app.css';
+  let recentJobs = [
+    { position: 'Software Engineer', company: 'Google', status: 'Accepted', appliedOn: '2024-01-15' },
+    { position: 'Frontend Developer', company: 'Facebook', status: 'Pending', appliedOn: '2024-02-20' },
+    { position: 'Data Scientist', company: 'Amazon', status: 'Rejected', appliedOn: '2024-03-10' },
+  ];
 </script>
 
 <main>
-  <div>
-    <h1 class="mx-a">Recently Saved Jobs</h1>
-  </div>
+<p class="text-lg justify-self-center">Recently Added Jobs</p>
+<ul class="list">
+  {#each recentJobs as job}
+  <br>
+    <li class="list-row">
+      <div>
+        <div class="text-md font-semibold">{job.position}</div>
+        <div class="text-xs opacity-60">{job.company}</div>
+      </div>
+      <div class="ml-auto text-sm opacity-60">{job.appliedOn}</div>
+    </li>
+  {/each}  
+</ul>
 </main>
 
 <style>
-  /* .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
-  }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #54bc4ae0);
-  }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
-  }
-  .read-the-docs {
-    color: #888;
-  } */
 </style>
